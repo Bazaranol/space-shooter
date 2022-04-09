@@ -4,9 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/game.css" />
     <title>Space Game</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo"><img src="../assets/Logo.png" alt="logo" /></div>
+      <div class="hp">HP:</div>
+      <div class="hpAmount">0</div>
+      <div class="score">Score:</div>
+      <div class="scoreAmount">0</div>
+    </header>
+    <main>
+      <div class="page">
+        <div class="game">
+          <img src="../assets/Starships/Hero.png" alt="player" id="player" />
+        </div>
+        <div class="controllerBar">
+          <div class="controllerBox">
+            <div class="topControllers">
+              <button
+                type="button"
+                class="controller"
+                id="top"
+                onclick="moveUp()"
+              >
+                <img src="../assets/Controls/ArrowUp.png" alt="top" />
+              </button>
+            </div>
+            <div class="middleControllers">
+              <button
+                type="button"
+                class="controller"
+                id="left"
+                onclick="moveLeft()"
+              >
+                <img src="../assets/Controls/ArrowLeft.png" alt="left" />
+              </button>
+              <button
+                type="button"
+                class="shooter"
+                id="shoot"
+                onclick="fireLaser()"
+              >
+                SHOOT
+              </button>
+              <button
+                type="button"
+                class="controller"
+                id="right"
+                onclick="moveRight()"
+              >
+                <img src="../assets/Controls/ArrowRight.png" alt="right" />
+              </button>
+            </div>
+            <div class="downControllers">
+              <button
+                type="button"
+                class="controller"
+                id="down"
+                onclick="moveDown()"
+              >
+                <img src="../assets/Controls/ArrowDown.png" alt="down" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
   <script src="../scripts/index.ts"></script>
 </html>

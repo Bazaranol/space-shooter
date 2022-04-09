@@ -1,0 +1,112 @@
+main {
+  height: inherit;
+}
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.score,
+.hp {
+  margin: 10px 30px 10px 30px;
+}
+.controllerBar {
+  float: right;
+  height: 100%;
+  width: 33%;
+  background: #044972;
+}
+.controller,
+.shooter {
+  height: 100px;
+  width: 100px;
+  border: 3px solid orange;
+  background: #241400;
+}
+.controller {
+  border-radius: 10px;
+}
+.shooter {
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: orange;
+  font-size: 24px;
+  text-align: center;
+}
+.controller:hover,
+.shooter:hover {
+  background: #441400;
+}
+.controllerBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controllerBox {
+  display: flex;
+  flex-direction: column;
+}
+.topControllers,
+.downControllers {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.middleControllers {
+  display: flex;
+  flex-direction: row;
+}
+button > img {
+  width: 80px;
+  height: 80px;
+}
+.game {
+  background-image: url(/Content/Game_Field_Background.png);
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1600px) {
+  .controllerBar {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .page {
+    flex-direction: column;
+  }
+  .controllerBar {
+    width: 100%;
+    height: 150px;
+  }
+  .controllerBox {
+    flex-direction: row;
+  }
+  .middleControllers {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .controller,
+  .shooter {
+    width: 60px;
+    height: 60px;
+  }
+  .shooter {
+    font-size: 14px;
+  }
+  button > img {
+    height: 50px;
+    height: 50px;
+  }
+  header {
+    font-size: 20px;
+  }
+  .logo {
+    display: none;
+  }
+  .game {
+    height: 80%;
+  }
+}
