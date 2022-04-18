@@ -15,7 +15,53 @@ main {
   float: right;
   height: 100%;
   width: 33%;
-  background: #044972;
+  -webkit-animation-name: colorChanging;
+  animation-name: colorChanging;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background: #2f2847;
+}
+@-webkit-keyframes colorChanging {
+  0% {
+    background: #251e3b;
+  }
+  20% {
+    background: #825e7c;
+  }
+  40% {
+    background: #706b9c;
+  }
+  60% {
+    background: #30516f;
+  }
+  80% {
+    background: #13314b;
+  }
+  100% {
+    background: #00172b;
+  }
+}
+@keyframes colorChanging {
+  0% {
+    background: #251e3b;
+  }
+  20% {
+    background: #825e7c;
+  }
+  40% {
+    background: #706b9c;
+  }
+  60% {
+    background: #30516f;
+  }
+  80% {
+    background: #13314b;
+  }
+  100% {
+    background: #00172b;
+  }
 }
 .controller,
 .shooter {
